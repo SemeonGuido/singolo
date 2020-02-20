@@ -45,14 +45,14 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", "Tahoma", sans-serif;
 }
 
 a:link,
 a:visited,
 a:active {
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
 a:hover {
@@ -66,15 +66,15 @@ h3 {
 }
 
 .container {
-    margin: 0 auto;
     width: 1020px;
+    margin: 0 auto;
 }
 
 .header {
-    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     height: 95px;
+    padding: 0 40px;
     font-weight: bold;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
@@ -91,8 +91,8 @@ h3 {
 }
 
 .menu ul {
-    height: 95px;
     display: flex;
+    height: 95px;
 }
 
 .menu li {
@@ -100,8 +100,8 @@ h3 {
     padding-left: 14px;
     font-size: 0.73em;
     text-transform: uppercase;
-    color: #494e62;
     list-style-position: inside;
+    color: #494e62;
 }
 
 .menu li:first-child {
@@ -114,17 +114,17 @@ a.active {
 
 .slider {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 600px;
     padding: 0 41px;
     background-color: #f06c64;
-    justify-content: space-between;
-    align-items: center;
     border-bottom: 15px solid #ea676b;
 }
 
 .vertical {
-    padding-right: 18px;
     padding-top: 7px;
+    padding-right: 18px;
 }
 
 .horizontal {
@@ -156,10 +156,10 @@ a.active {
 
 .services p {
     padding-top: 19px;
-    font-weight: 300;
     font-size: 1.125em;
-    text-align: justify;
+    font-weight: 300;
     line-height: 1.6em;
+    text-align: justify;
 }
 
 .items {
@@ -191,8 +191,8 @@ a.active {
 .phone p,
 .bubble p,
 .star p {
-    font-weight: normal;
     font-size: 0.75em;
+    font-weight: normal;
     line-height: 1.78em;
 }
 
