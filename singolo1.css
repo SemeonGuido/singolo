@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Regular.eot");
+    src: url("assets/fonts/Lato-Regular.eot?#iefix")format("embedded-opentype"),
+        url("assets/fonts/Lato-Regular.woff2") format("woff2"),
+        url("assets/fonts/Lato-Regular.woff") format("woff"),
+        url("assets/fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Bold.eot");
+    src: url("assets/fonts/Lato-Bold.eot?#iefix")format("embedded-opentype"),
+        url("assets/fonts/Lato-Bold.woff2") format("woff2"),
+        url("assets/fonts/Lato-Bold.woff") format("woff"),
+        url("assets/fonts/Lato-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Light.eot");
+    src: url("assets/fonts/Lato-Light.eot?#iefix")format("embedded-opentype"),
+        url("assets/fonts/Lato-Light.woff2") format("woff2"),
+        url("assets/fonts/Lato-Light.woff") format("woff"),
+        url("assets/fonts/Lato-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Black.eot");
+    src: url("assets/fonts/Lato-Black.eot?#iefix")format("embedded-opentype"),
+        url("assets/fonts/Lato-Black.woff2") format("woff2"),
+        url("assets/fonts/Lato-Black.woff") format("woff"),
+        url("assets/fonts/Lato-Black.ttf") format("truetype");
+    font-weight: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f06c64;
+}
+
+h2,
+h3 {
+    font-weight: 900;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1020px;
+}
+
+.header {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    height: 95px;
+    font-weight: bold;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+}
+
+.header span {
+    color: #f06c64;
+}
+
+.header h1 {
+    padding-top: 30px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.menu ul {
+    height: 95px;
+    display: flex;
+}
+
+.menu li {
+    padding-top: 41px;
+    padding-left: 14px;
+    font-size: 0.73em;
+    text-transform: uppercase;
+    color: #494e62;
+    list-style-position: inside;
+}
+
+.menu li:first-child {
+    list-style-type: none;
+}
+
+a.active {
+    color: #f06c64;
+}
+
+.slider {
+    display: flex;
+    height: 600px;
+    padding: 0 41px;
+    background-color: #f06c64;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 15px solid #ea676b;
+}
+
+.vertical {
+    padding-right: 18px;
+    padding-top: 7px;
+}
+
+.horizontal {
+    padding-top: 5px;
+}
+
+.chev-left,
+.chev-right {
+    opacity: 0.3;
+}
+
+.chev-left:hover,
+.chev-right:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.services {
+    padding: 58px 40px 0 40px;
+    height: 495px;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid white;
+}
+
+.services h2 {
+    font-size: 2em;
+    letter-spacing: -0.04em;
+}
+
+.services p {
+    padding-top: 19px;
+    font-weight: 300;
+    font-size: 1.125em;
+    text-align: justify;
+    line-height: 1.6em;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.items div {
+    width: 33.333%;
+}
+
+.items h3 {
+    font-size: 1.2em;
+    letter-spacing: -0.04em;
+}
+
+.pen {
+    background: 5.5% 59% url(assets/img/pen.png) no-repeat, 0.5% 61% url(assets/img/Ellipse.png) no-repeat;
+}
+
+.pen h3 {
+    margin: 43px 0 0 79px;
+}
+
+.pen p,
+.bulb p,
+.heart p,
+.phone p,
+.bubble p,
+.star p {
+    font-weight: normal;
+    font-size: 0.75em;
+    line-height: 1.78em;
+}
+
+.pen p {
+    margin: -11px 14px 0 81px;
+}
+
+.bulb {
+    background: 9% 58% url(assets/img/bulb.png) no-repeat, 2.5% 61% url(assets/img/Ellipse.png) no-repeat;
+}
+
+.bulb h3 {
+    margin: 43px 0 0 85px;
+}
+
+.bulb p {
+    margin: -11px 8px 0 86px;
+}
+
+.heart {
+    background: 9.5% 58% url(assets/img/heart.png) no-repeat, 5% 60% url(assets/img/Ellipse.png) no-repeat;
+}
+
+.heart h3 {
+    margin: 43px 0 0 94px;
+}
+
+.heart p {
+    margin: -11px 1px 0 93px;
+}
+
+.phone {
+    background: 7% 53% url(assets/img/phone.png) no-repeat, 0.5% 53% url(assets/img/Ellipse.png) no-repeat;
+}
+
+.phone h3 {
+    margin: 28px 0 0 80px;
+}
+
+.phone p {
+    margin: -10px 14px 0 81px;
+}
+
+.bubble {
+    background: 7.5% 52% url(assets/img/bubble.png) no-repeat, 2.5% 54% url(assets/img/Ellipse.png) no-repeat;
+}
+
+.bubble h3 {
+    margin: 28px 0 0 85px;
+}
+
+.bubble p {
+    margin: -10px 7px 0 87px;
+}
+
+.star {
+    background: 9.5% 51% url(assets/img/star.png) no-repeat, 5% 52% url(assets/img/Ellipse.png) no-repeat;
+}
+
+.star h3 {
+    margin: 28px 0 0 94px;
+}
+
+.star p {
+    margin: -10px 2px 0 92px;
+
+}
