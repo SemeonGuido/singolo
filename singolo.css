@@ -58,15 +58,13 @@ a:active {
 }
 
 .menu a {
-    transition-property: color;
-    transition-duration: 0.5s;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu a:hover {
     text-decoration: none;
     color: #f06c64;
-    transition-property: color;
-    transition-duration: 0.5s;
+    transition: all 0.3s ease-in-out;
 }
 
 h2 {
@@ -153,16 +151,14 @@ a.active {
 .chev-left,
 .chev-right {
     opacity: 0.3;
-    transition-property: opacity;
-    transition-duration: 0.5s;
+    transition: all 0.3s ease-in-out;
 }
 
 .chev-left:hover,
 .chev-right:hover {
     cursor: pointer;
     opacity: 1;
-    transition-property: opacity;
-    transition-duration: 0.5s;
+    transition: all 0.3s ease-in-out;
 }
 
 .services {
@@ -325,11 +321,11 @@ a.active {
 }
 
 button {
-    transition: color 0.5s, border 0.5s, background 0.5s;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover {
-    transition: color 0.5s, border 0.5s, background 0.5s;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover,
@@ -473,14 +469,14 @@ button:focus {
     margin-right: 8px;
     border: 1px solid #666d89;
     border-radius: 50%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .social a:hover {
     cursor: pointer;
     filter: brightness(0);
     transform: scale(1.2, 1.2);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .facebook {
