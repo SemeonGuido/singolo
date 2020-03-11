@@ -57,6 +57,13 @@ a:active {
     color: white;
 }
 
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
 .menu a {
     transition: all 0.3s ease-in-out;
 }
@@ -336,9 +343,7 @@ button:hover {
     transition: all 0.3s ease-in-out;
 }
 
-button:hover,
-button:active,
-button:focus {
+button:hover {
     color: #dedede;
     border: 1px solid #dedede;
     cursor: pointer;
