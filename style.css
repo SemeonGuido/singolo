@@ -268,7 +268,7 @@ a.active {
 }
 
 .bubble h3 {
-    margin: 31px 0 0 85px;
+    margin: 31px 0 0 86px;
 }
 
 .bubble p {
@@ -608,7 +608,7 @@ textarea {
     height: 35px;
     width: 80px;
     padding: 8px 15px;
-    color: #e87e8f;
+    color: #f0d8d9;
     font-family: "Lato", "Tahoma", sans-serif;
     font-size: 0.8em;
     font-weight: 400;
@@ -617,13 +617,10 @@ textarea {
     border: none;
     border-radius: 10px;
     position: relative;
-    left: -15px;
-    position: relative;
     left: 87%;
 }
 
 .get_a_quote button:hover {
-    color: #f0d8d9;
     outline: none;
     border: none;
     background: #ee3c32;
