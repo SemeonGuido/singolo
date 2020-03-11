@@ -164,6 +164,7 @@ a.active {
 .services {
     padding: 59px 40px 0 40px;
     height: 500px;
+    color: #666d89;
     background-color: #f2f2f2;
     border-bottom: 6px solid white;
 }
