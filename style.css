@@ -70,6 +70,7 @@ a:active {
 h2 {
     font-weight: 900;
     font-size: 2em;
+    letter-spacing: -0.1px;
 }
 
 h3 {
@@ -77,6 +78,7 @@ h3 {
     font-size: 1.2em;
     overflow: hidden;
     text-overflow: ellipsis;
+    letter-spacing: -0.1px;
 }
 
 p {
@@ -114,9 +116,10 @@ p {
 }
 
 .menu li {
-    padding-top: 41px;
-    padding-left: 11px;
-    font-size: 0.8em;
+    padding-top: 42px;
+    padding-left: 12.5px;
+    font-size: 0.813em;
+    letter-spacing: -0.3px;
     text-transform: uppercase;
     list-style-position: inside;
     color: #494e62;
@@ -145,11 +148,13 @@ a.active {
 }
 
 .horizontal {
-    padding-top: 5px;
+    padding: 5px 0 0 2px;
 }
 
 .chev-left,
 .chev-right {
+    margin-bottom: -7px;
+    margin-left: 2px;
     opacity: 0.3;
     transition: all 0.3s ease-in-out;
 }
@@ -541,7 +546,7 @@ button:focus {
     padding-left: 23px;
     font-size: 0.8rem;
     font-weight: normal;
-    line-height: 1.8em;
+    line-height: 1.7em;
     letter-spacing: -0.01px;
 }
 
@@ -566,7 +571,7 @@ button:focus {
 input,
 textarea {
     display: block;
-    width: 100%;
+    width: 619px;
     margin-top: 2px;
     margin-bottom: 16px;
     padding: 15px;
@@ -634,8 +639,10 @@ textarea {
 }
 
 .copyright {
-    font-size: 0.8em;
+    padding-left: 3px;
+    font-size: 0.7em;
     color: #666d89;
+    letter-spacing: 0.5px;
 }
 
 .footer .linkedin {
