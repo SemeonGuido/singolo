@@ -1,201 +1,658 @@
-<!DOCTYPE html>
-<html lang="en">
+@font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Regular.eot");
+    src: url("assets/fonts/Lato-Regular.eot?#iefix")format("embedded-opentype"),
+        url("assets/fonts/Lato-Regular.woff2") format("woff2"),
+        url("assets/fonts/Lato-Regular.woff") format("woff"),
+        url("assets/fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
 
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Singolo</title>
-</head>
+@font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Bold.eot");
+    src: url("assets/fonts/Lato-Bold.eot?#iefix")format("embedded-opentype"),
+        url("assets/fonts/Lato-Bold.woff2") format("woff2"),
+        url("assets/fonts/Lato-Bold.woff") format("woff"),
+        url("assets/fonts/Lato-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
 
-<body>
-    <div class="container">
+@font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Light.eot");
+    src: url("assets/fonts/Lato-Light.eot?#iefix")format("embedded-opentype"),
+        url("assets/fonts/Lato-Light.woff2") format("woff2"),
+        url("assets/fonts/Lato-Light.woff") format("woff"),
+        url("assets/fonts/Lato-Light.ttf") format("truetype");
+    font-weight: 300;
+}
 
-        <header>
-            <div class="header">
-                <h1><a href="#">SINGOLO<span>*</span></a></h1>
-                <nav>
-                    <div class="menu">
-                        <ul>
-                            <li><a class="active" href="#">home</a></li>
-                            <li><a href="#">services</a></li>
-                            <li><a href="#">portfolio</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
+@font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Black.eot");
+    src: url("assets/fonts/Lato-Black.eot?#iefix")format("embedded-opentype"),
+        url("assets/fonts/Lato-Black.woff2") format("woff2"),
+        url("assets/fonts/Lato-Black.woff") format("woff"),
+        url("assets/fonts/Lato-Black.ttf") format("truetype");
+    font-weight: 900;
+}
 
-        <main>
-            <div class="slider">
-                <div class="chev-left"><img src="assets/img/chevLeft-black.png"></div>
-                <div class="vertical"><img src="assets/img/iPhone Vertical.png"></div>
-                <div class="horizontal"><img src="assets/img/iPhone Horizontal.png"></div>
-                <div class="chev-right"><img src="assets/img/chevRight-black.png"></div>
-            </div>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-            <div class="services">
-                <div>
-                    <h2>Our Services</h2>
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo
-                        luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
-                        cursus commodo, tortor mauris condimentum nibh.</p>
-                </div>
-                <div class="items">
-                    <div class="pen">
-                        <h3>Custom Design</h3>
-                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut,
-                            ultrices velit</p>
-                    </div>
-                    <div class="bulb">
-                        <h3>Inovative Ideas</h3>
-                        <p>Quisque luctus, quam eget molestie com-modo, lacus purus cursus purus, nec rutrum tellus
-                            dolor id lorem.</p>
-                    </div>
-                    <div class="heart">
-                        <h3>Love Is The Answer</h3>
-                        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
-                            Quisque condimentum.</p>
-                    </div>
-                    <div class="phone">
-                        <h3>Responsive Layout</h3>
-                        <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-sent
-                            elit leo.</p>
-                    </div>
-                    <div class="bubble">
-                        <h3>24&nbsp;/&nbsp;7 Support</h3>
-                        <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen-tesque
-                            egestas venenatis lorem.</p>
-                    </div>
-                    <div class="star">
-                        <h3>Feel Like A Star</h3>
-                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce
-                            vitae aliquam tellus.</p>
-                    </div>
+html,
+button {
+    font-family: "Lato", "Tahoma", sans-serif;
+    font-size: 15px;
+}
 
-                </div>
-            </div>
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: white;
+}
 
-            <div class="portfolio">
-                <h2>Portfolio</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                <div class="categories">
-                    <button class="active">All</button>
-                    <button>Web Design</button>
-                    <button>Graphic Design</button>
-                    <button>Artwork</button>
-                </div>
-                <div class="gallery image">
-                    <div class="img1"></div>
-                    <div class="img2"></div>
-                    <div class="img3"></div>
-                    <div class="img4"></div>
-                    <div class="img5"></div>
-                    <div class="img6"></div>
-                    <div class="img7"></div>
-                    <div class="img8"></div>
-                    <div class="img9"></div>
-                    <div class="img10"></div>
-                    <div class="img11"></div>
-                    <div class="img12"></div>
-                </div>
-            </div>
+.menu a {
+    transition: all 0.3s ease-in-out;
+}
 
-            <div class="about_us">
-                <h2>About Us</h2>
-                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
-                    nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-                    tortor mauris condimentum nibh.</p>
-                <div class="gallery photo">
-                    <div>
-                        <div class="photo1"></div>
-                        <h3>Adam Jensen</h3>
-                        <p>Quisque luctus, quam eget molestie commodo, lacus purus&nbsp;cursus purus, nec rutrum tellus
-                            dolor
-                            id lorem.</p>
-                        <div class="social">
-                            <a class="facebook" href="#"></a>
-                            <a class="google" href="#"></a>
-                            <a class="twitter" href="#"></a>
-                            <a class="linkedin" href="#"></a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="photo2"></div>
-                        <h3>Desmond Miles</h3>
-                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet,
-                            viverra lacus ut, ultrices velit.</p>
-                        <div class="social">
-                            <a class="facebook" href="#"></a>
-                            <a class="google" href="#"></a>
-                            <a class="twitter" href="#"></a>
-                            <a class="linkedin" href="#"></a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="photo3"></div>
-                        <h3>Scolara Visari</h3>
-                        <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
-                            consequat felis. Quisque condimentum.</p>
-                        <div class="social">
-                            <a class="facebook" href="#"></a>
-                            <a class="google" href="#"></a>
-                            <a class="twitter" href="#"></a>
-                            <a class="linkedin" href="#"></a>
-                        </div>
-                    </div>
+.menu a:hover {
+    text-decoration: none;
+    color: #f06c64;
+    transition: all 0.3s ease-in-out;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2em;
+    letter-spacing: -0.1px;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 1.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: -0.08px;
+}
+
+p {
+    text-overflow: ellipsis;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 95px;
+    padding: 0 40px;
+    font-weight: bold;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+}
+
+.header span {
+    color: #f06c64;
+}
+
+.header h1 {
+    padding-top: 30px;
+    font-size: 1.63em;
+    color: white;
+}
+
+.menu ul {
+    display: flex;
+    height: 95px;
+}
+
+.menu li {
+    padding-top: 42px;
+    padding-left: 12.5px;
+    font-size: 0.813em;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    list-style-position: inside;
+    color: #494e62;
+}
+
+.menu li:first-child {
+    list-style-type: none;
+}
+
+a.active {
+    color: #f06c64;
+}
 
 
 
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    padding: 0 40px;
+    background-color: #f06c64;
+    border-bottom: 15px solid #ea676b;
+}
 
-                </div>
-            </div>
+.vertical {
+    padding: 7px 18px 0 1px;
+}
 
-            <div class="get_a_quote">
-                <h2>Get a Quote</h2>
-                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
-                    nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-                    tortor mauris condimentum nibh.</p>
-                <div class="form_wrapper">
-                    <div class="form">
-                        <form action="#" autocomplete="off">
-                            <input type="text" name="name" placeholder="Name (Required)" required>
-                            <input type="email" name="email" autocomplete="new-password" placeholder="Email (Required)"
-                                required>
-                            <input type="text" name="Subject" placeholder="Subject">
-                            <textarea maxlength="750" placeholder="Describe your project in detail..."></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                    <div class="contact_inform">
-                        <h3>Contact Information</h3>
-                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. Fusce
-                            vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
-                            faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                        <span class="location"><a href="#">Elm St. 14/05 Lost City</a></span><br>
-                        <span class="tel"><a href="tel:03528 331 86 35">03528 331 86 35</a></span><br>
-                        <span class="mail"><a href="mailto:info@singolo.com">info@singolo.com</a></span>
-                    </div>
-                </div>
-            </div>
-        </main>
+.horizontal {
+    padding: 5px 0 0 2px;
+}
 
-        <footer>
-            <div class="footer">
-                <div class="copyright">
-                    © Copyright 2013
-                </div>
-                <div class="social">
-                    <a class="facebook" href="#"></a>
-                    <a class="google" href="#"></a>
-                    <a class="twitter" href="#"></a>
-                    <a class="linkedin" href="#"></a>
-                </div>
-            </div>
-        </footer>
+.chev-left,
+.chev-right {
+    margin-bottom: -7px;
+    margin-left: 2px;
+    opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+}
 
-    </div>
-</body>
+.chev-left:hover,
+.chev-right:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
 
-</html>
+.services {
+    padding: 59px 40px 0 40px;
+    height: 500px;
+    color: #666d89;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid white;
+}
+
+.services p {
+    height: 80px;
+}
+
+.services p,
+.portfolio p,
+.about_us p,
+.get_a_quote p {
+    padding-top: 18px;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.7em;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.items div {
+    width: calc(100% / 3);
+}
+
+.items h3 {
+    font-size: 1.2em;
+}
+
+.pen {
+    background: 5.5% 58% url(assets/img/pen.png) no-repeat, 0.5% 61% url(assets/img/Ellipse.png) no-repeat;
+}
+
+.pen h3 {
+    margin: 41px 0 0 80px;
+}
+
+.pen p,
+.bulb p,
+.heart p,
+.phone p,
+.bubble p,
+.star p {
+    font-size: 0.8em;
+    font-weight: normal;
+    line-height: 1.8em;
+}
+
+.pen p {
+    margin: -10px 13px 0 81px;
+}
+
+.bulb {
+    background: 9% 57% url(assets/img/bulb.png) no-repeat, 2.8% 61% url(assets/img/Ellipse.png) no-repeat;
+}
+
+.bulb h3 {
+    margin: 41px 0 0 86px;
+}
+
+.bulb p {
+    margin: -10px 7px 0 86px;
+}
+
+.heart {
+    background: 9.8% 58% url(assets/img/heart.png) no-repeat, 5.5% 61% url(assets/img/Ellipse.png) no-repeat;
+}
+
+.heart h3 {
+    margin: 41px 0 0 94px;
+}
+
+.heart p {
+    margin: -10px 1px 0 93px;
+}
+
+.phone {
+    background: 7% 54% url(assets/img/phone.png) no-repeat, 0.5% 55% url(assets/img/Ellipse.png) no-repeat;
+}
+
+.phone h3 {
+    margin: 31px 0 0 80px;
+}
+
+.phone p {
+    margin: -10px 13px 0 81px;
+}
+
+.bubble {
+    background: 7.5% 54% url(assets/img/bubble.png) no-repeat, 2.8% 55% url(assets/img/Ellipse.png) no-repeat;
+}
+
+.bubble h3 {
+    margin: 31px 0 0 86px;
+}
+
+.bubble p {
+    margin: -10px 7px 0 87px;
+}
+
+.star {
+    background: 10% 53% url(assets/img/star.png) no-repeat, 5.5% 54% url(assets/img/Ellipse.png) no-repeat;
+}
+
+.star h3 {
+    margin: 31px 0 0 94px;
+}
+
+.star p {
+    margin: -10px 1px 0 93px;
+}
+
+.portfolio {
+    padding: 59px 40px 0 40px;
+    height: 869px;
+    color: #666d89;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+}
+
+.categories {
+    margin-left: 1px;
+}
+
+.categories button {
+    margin: 11px 0;
+    margin-right: 8px;
+    padding: 0px 6px;
+    height: 22px;
+    font-size: 0.7em;
+    color: #666d89;
+    letter-spacing: 0.08em;
+    background-color: transparent;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+}
+
+.categories button:nth-child(2) {
+    padding: 0px 5.5px;
+    margin-right: 7px;
+}
+
+.categories button:nth-child(3) {
+    padding: 0px 5px;
+    margin-right: 7px;
+}
+
+.categories button:nth-child(4) {
+    padding: 0px 5px;
+}
+
+button {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover,
+button:active,
+button:focus {
+    color: #dedede;
+    border: 1px solid #dedede;
+    cursor: pointer;
+    outline: none;
+}
+
+button.active {
+    color: #dedede;
+    border: 1px solid #dedede;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.image {
+    height: 601px;
+    margin-top: 8px;
+}
+
+.gallery div {
+    width: 220px;
+    height: 187px;
+    background-color: #464b5e;
+}
+
+.img1 {
+    background: url(assets/img/img1.png);
+}
+
+.img2 {
+    background: url(assets/img/img2.png);
+}
+
+.img3 {
+    background: url(assets/img/img3.png);
+}
+
+.img4 {
+    background: url(assets/img/img4.png);
+}
+
+.img5 {
+    background: url(assets/img/img5.png);
+}
+
+.img6 {
+    background: url(assets/img/img6.png);
+}
+
+.img7 {
+    background: url(assets/img/img7.png);
+}
+
+.img8 {
+    background: url(assets/img/img8.png);
+}
+
+.img9 {
+    background: url(assets/img/img9.png);
+}
+
+.img10 {
+    background: url(assets/img/img10.png);
+}
+
+.img11 {
+    background: url(assets/img/img11.png);
+}
+
+.img12 {
+    background: url(assets/img/img12.png);
+}
+
+.gallery.image div:nth-child(n+13) {
+    display: none;
+}
+
+
+.about_us {
+    padding: 59px 40px 0 40px;
+    height: 734px;
+    color: #666d89;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid white;
+}
+
+.photo {
+    margin-top: 45px;
+}
+
+.gallery.photo div {
+    width: 300px;
+    height: 300px;
+    background-color: #464b5e;
+}
+
+.photo1 {
+    background: url(assets/img/photo1.png);
+}
+
+.photo2 {
+    background: url(assets/img/photo2.png);
+}
+
+.photo3 {
+    background: url(assets/img/photo3.png);
+}
+
+.photo h3 {
+    margin-top: 15px;
+}
+
+.photo p {
+    margin-top: -10px;
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.social {
+    display: flex;
+}
+
+.gallery.photo .social {
+    margin-top: 24px;
+    height: 32px;
+    background-color: transparent;
+}
+
+.gallery.photo h3 {
+    white-space: nowrap;
+}
+
+.social a {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border: 1px solid #666d89;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.social a:hover {
+    cursor: pointer;
+    filter: brightness(0);
+    transform: scale(1.2, 1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.facebook {
+    background: url(assets/img/facebook.png) center no-repeat;
+}
+
+.google {
+    background: url(assets/img/google+.png) center no-repeat;
+}
+
+.twitter {
+    background: url(assets/img/twitter.png) center no-repeat;
+}
+
+.linkedin {
+    background: url(assets/img/linkedin.png) center no-repeat;
+}
+
+.get_a_quote {
+    padding: 59px 40px 0;
+    height: 654px;
+    color: #f0d8d9;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+}
+
+.get_a_quote p {
+    padding-bottom: 42px;
+}
+
+.get_a_quote a {
+    color: #f0d8d9;
+}
+
+.form_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    width: 620px;
+}
+
+.contact_inform {
+    width: 300px;
+}
+
+.contact_inform p,
+.contact_inform p a {
+    width: 301px;
+    padding-top: 8px;
+    padding-bottom: 25px;
+    color: #f0d8d9;
+    font-size: 0.8rem;
+    font-weight: normal;
+    line-height: 1.8em;
+    letter-spacing: -0.01px;
+}
+
+.contact_inform span {
+    padding-left: 23px;
+    font-size: 0.8rem;
+    font-weight: normal;
+    line-height: 1.7em;
+    letter-spacing: -0.01px;
+}
+
+.location {
+    background: 2% 70% no-repeat url(assets/img/location.png);
+}
+
+.tel {
+    background: left no-repeat url(assets/img/phone1.png);
+}
+
+.mail {
+    background: left 70% no-repeat url(assets/img/mail.png);
+}
+
+.location:hover,
+.tel:hover,
+.mail:hover {
+    filter: brightness(0.4);
+}
+
+input,
+textarea {
+    display: block;
+    width: 619px;
+    margin-top: 2px;
+    margin-bottom: 16px;
+    padding: 15px;
+    color: #f0d8d9;
+    font-family: "Lato", "Tahoma", sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.5em;
+    background-color: #d6564f;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    height: 38px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #f48c8f;
+}
+
+textarea {
+    height: 201px;
+    padding-top: 9px;
+    resize: none;
+}
+
+.get_a_quote button {
+    height: 35px;
+    width: 80px;
+    padding: 8px 15px;
+    color: #f0d8d9;
+    font-family: "Lato", "Tahoma", sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-align: center;
+    background: #d6564f;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    left: 87%;
+}
+
+.get_a_quote button:hover {
+    outline: none;
+    border: none;
+    background: #ee3c32;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76px;
+    padding: 0 40px;
+    background-color: #2d303a;
+}
+
+.copyright {
+    padding-left: 3px;
+    font-size: 0.7em;
+    color: #666d89;
+    letter-spacing: 0.5px;
+}
+
+.footer .linkedin {
+    margin: 0;
+}
+
+.footer .social a:hover {
+    filter: brightness(1);
+}
