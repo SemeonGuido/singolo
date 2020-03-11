@@ -1,1 +1,1 @@
-https://SemeonGuido.github.io/singolo/singolo.html
+https://SemeonGuido.github.io/singolo/index.html
