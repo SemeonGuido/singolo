@@ -3,23 +3,21 @@
 const hamburgerIcon = document.querySelector('.hamburger');
 const headerMin = document.querySelector('.header-min');
 
-hamburgerIcon.addEventListener('click', function () {
+hamburgerIcon.addEventListener('click', OnOffHeaderMin);
+
+document.addEventListener('click', function (elem) {
+    let isBurgerActive = document.querySelector('.hamburger').classList.contains('hamburger-active');
+    if (isBurgerActive && elem.target.tagName === 'A' || e.target.tagName === 'NAV') {
+        OnOffHeaderMin();
+    }
+});
+
+function OnOffHeaderMin() {
     headerMin.classList.toggle('header-min-active');
     hamburgerIcon.classList.toggle('hamburger-active');
     document.querySelector('.wrapper').classList.toggle('wrapper-opacity');
     document.body.classList.toggle('blocked-scroll');
-});
-
-document.addEventListener('click', (e) => {
-    let isBurgerActive = document.querySelector('.hamburger').classList.contains('hamburger-active');
-    if (isBurgerActive && e.target.tagName === 'A' || e.target.tagName === 'NAV') {
-        headerMin.classList.toggle('header-min-active');
-        hamburgerIcon.classList.toggle('hamburger-active');
-        document.querySelector('.wrapper').classList.toggle('wrapper-opacity');
-        document.body.classList.toggle('blocked-scroll');
-    }
-}, true);
-
+}
 
 // Active link on scroll
 

@@ -893,7 +893,7 @@ textarea {
 }
 
 /* tablet-768 */
-@media screen and (max-width: 1038px) {
+@media screen and (max-width: 1020px) {
 
     .container {
         width: 768px;
@@ -1148,7 +1148,7 @@ textarea {
 }
 
 /* mobile-375 */
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 767px) {
     .container {
         position: relative;
         width: 375px;
