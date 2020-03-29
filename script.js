@@ -1,27 +1,67 @@
+// Active header-min
+
+const hamburgerIcon = document.querySelector('.hamburger');
+const headerMin = document.querySelector('.header-min');
+
+hamburgerIcon.addEventListener('click', function () {
+    headerMin.classList.toggle('header-min-active');
+    hamburgerIcon.classList.toggle('hamburger-active');
+    document.querySelector('.wrapper').classList.toggle('wrapper-opacity');
+    document.body.classList.toggle('blocked-scroll');
+});
+
+document.addEventListener('click', (e) => {
+    let isBurgerActive = document.querySelector('.hamburger').classList.contains('hamburger-active');
+    if (isBurgerActive && e.target.tagName === 'A' || e.target.tagName === 'NAV') {
+        headerMin.classList.toggle('header-min-active');
+        hamburgerIcon.classList.toggle('hamburger-active');
+        document.querySelector('.wrapper').classList.toggle('wrapper-opacity');
+        document.body.classList.toggle('blocked-scroll');
+    }
+}, true);
+
+
+// Active link on scroll
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+    const curPos = window.scrollY;
+    const sections = document.querySelectorAll('section');
+    const links = document.querySelectorAll('.menu_link');
+
+    sections.forEach(function (el) {
+        if (el.offsetTop - 250 <= curPos && (el.offsetTop + el.offsetHeight - 250) > curPos) {
+            links.forEach(function (a) {
+                a.classList.remove('menu_link_active');
+                if (el.getAttribute('class') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('menu_link_active');
+                }
+            })
+        }
+    });
+}
+
+
 // Menu
 
 const navigationElement = document.querySelector(".menu");
 
-navigationElement.addEventListener("click", event => {
+navigationElement.addEventListener("click", function (event) {
     setActive("menu_link", "menu_link_active", event);
 });
 
 function setActive(elementsClass, activeClass, event) {
     if (event.target.classList.contains(`${elementsClass}`)) {
         const elements = document.querySelectorAll(`.${elementsClass}`);
-        elements.forEach(element => {
+        elements.forEach(function (element) {
             element.classList.remove(`${activeClass}`);
         });
         event.target.closest(`.${elementsClass}`).classList.add(`${activeClass}`);
     }
 }
 
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset >= sticky) {
-        navigation.classList.add("navigation__fixed")
-    } else
-        navigation.classList.remove("navigation__fixed");
-})
+
 
 
 // Slider
@@ -33,13 +73,13 @@ const slideElements = document.querySelectorAll(".slide-1, .slide-2");
 let currentSlide = 0;
 let isEnable = true;
 
-arrowLeftElement.addEventListener("click", () => {
+arrowLeftElement.addEventListener("click", function () {
     if (isEnable) {
         showPreviousSlide(currentSlide);
     }
 });
 
-arrowRightElement.addEventListener("click", () => {
+arrowRightElement.addEventListener("click", function () {
     if (isEnable) {
         showNextSlide(currentSlide);
     }
@@ -83,7 +123,7 @@ function showSlide(direction) {
 
 const slide1Element = document.querySelector(".slide-1");
 
-slide1Element.addEventListener("click", event => {
+slide1Element.addEventListener("click", function (event) {
     let phoneSelectedElement = event.target.closest(".base");
 
     if (phoneSelectedElement) {
@@ -116,12 +156,12 @@ const portfolioButtonsElements = document.querySelector(".categories");
 const galleryElement = document.querySelector(".gallery");
 const picturesElements = document.querySelectorAll(".gallery.image > div");
 
-portfolioButtonsElements.addEventListener("click", event => {
+portfolioButtonsElements.addEventListener("click", function (event) {
     if (event.target.classList.contains("portfolio_button")) {
         reorderPictures();
     }
     setActive("portfolio_button", "button_active", event);
-    picturesElements.forEach(picture => {
+    picturesElements.forEach(function (picture) {
         picture.classList.remove("picture_active");
     });
 });
@@ -133,14 +173,14 @@ function reorderPictures() {
     galleryElement.append(firstPictureCopy);
 }
 
-galleryElement.addEventListener("click", event => {
+galleryElement.addEventListener("click", function (event) {
     setActive(`image`, `picture_active`, event);
 });
 
 function setActive(elementsClass, activeClass, event) {
     if (event.target.classList.contains(`${elementsClass}`)) {
         const elements = document.querySelectorAll(`.${elementsClass}`);
-        elements.forEach(element => {
+        elements.forEach(function (element) {
             element.classList.remove(`${activeClass}`);
         });
         event.target.closest(`.${elementsClass}`).classList.add(`${activeClass}`);
@@ -152,7 +192,6 @@ function setActive(elementsClass, activeClass, event) {
 
 const formElement = document.querySelector("form");
 const submitFormButton = document.querySelector("button[type='submit']");
-console.log(submitFormButton);
 const modalWrapperElement = document.querySelector(".modal-wrapper");
 const nameInput = document.querySelector("input[name='name']");
 const emailInput = document.querySelector("input[name='email']");
@@ -162,7 +201,7 @@ const modalSubjectElement = document.querySelector("#modal-subject");
 const modalDescriptionElement = document.querySelector("#modal-description");
 const modalCloseButton = document.querySelector("#modal-close-button");
 
-submitFormButton.addEventListener("click", event => {
+submitFormButton.addEventListener("click", function (event) {
     event.preventDefault();
 
     if (!nameInput.value) {
@@ -186,7 +225,7 @@ submitFormButton.addEventListener("click", event => {
     }
 });
 
-modalCloseButton.addEventListener("click", () => {
+modalCloseButton.addEventListener("click", function () {
     modalWrapperElement.classList.add("visually-hidden");
     document.body.classList.remove("locked");
     formElement.reset();

@@ -3,20 +3,44 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Singolo</title>
 </head>
 
 <body>
+
+
     <div class="container">
 
         <header>
+
             <div class="header" id="header">
+                <div class="wrapper"></div>
+
+                <div class="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+                <div class="header-min">
+                    <h1><a href="#">SINGOLO<span>*</span></a></h1>
+                    <div class="menu-min">
+                        <ul>
+                            <li><a class="menu_link menu_link_active" href="#slider">home</a></li>
+                            <li><a class="menu_link" href="#services">services</a></li>
+                            <li><a class="menu_link" href="#portfolio">portfolio</a></li>
+                            <li><a class="menu_link" href="#about_us">about</a></li>
+                            <li><a class="menu_link" href="#get_a_quote">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
                 <h1><a href="#">SINGOLO<span>*</span></a></h1>
                 <nav>
                     <div class="menu">
                         <ul>
-                            <li><a class="menu_link menu_link_active" href="#top">home</a></li>
+                            <li><a class="menu_link menu_link_active" href="#slider">home</a></li>
                             <li><a class="menu_link" href="#services">services</a></li>
                             <li><a class="menu_link" href="#portfolio">portfolio</a></li>
                             <li><a class="menu_link" href="#about_us">about</a></li>
@@ -28,17 +52,9 @@
         </header>
 
         <main>
-            <!-- <div class="slider">
-                <div class="chev-left"><img src="assets/img/chevLeft-black.png"></div>
-                <div class="slide-1">
-                    <div class="vertical"><img src="assets/img/iPhone Vertical.png"></div>
-                    <div class="horizontal"><img src="assets/img/iPhone Horizontal.png"></div>
-                </div>
-                <div class="slide-2"></div>
-                <div class="chev-right"><img src="assets/img/chevRight-black.png"></div>
-            </div> -->
 
-            <div class="slider">
+            <section class="slider">
+                <div id="slider"></div>
                 <div class="slide-1 slide_active">
                     <div class="phone_vertical">
                         <div class="shadow_vertical"></div>
@@ -56,9 +72,9 @@
                 <div class="slide-2"></div>
                 <div class="chev-left"></div>
                 <div class="chev-right"></div>
-            </div>
+            </section>
 
-            <div class="services">
+            <section class="services">
                 <div id="services"></div>
                 <div>
                     <h2>Our Services</h2>
@@ -99,9 +115,9 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
 
-            <div class="portfolio">
+            <section class="portfolio">
                 <div id="portfolio"></div>
                 <h2>Portfolio</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -125,9 +141,9 @@
                     <div class="image img11"></div>
                     <div class="image img12"></div>
                 </div>
-            </div>
+            </section>
 
-            <div class="about_us">
+            <section class="about_us">
                 <div id="about_us"></div>
                 <h2>About Us</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
@@ -176,9 +192,9 @@
 
 
                 </div>
-            </div>
+            </section>
 
-            <div class="get_a_quote">
+            <section class="get_a_quote">
                 <div id="get_a_quote"></div>
                 <h2>Get a Quote</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
@@ -205,7 +221,7 @@
                         <span class="mail"><a href="mailto:info@singolo.com">info@singolo.com</a></span>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
 
         <footer>
