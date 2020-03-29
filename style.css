@@ -145,6 +145,10 @@ p {
     display: none;
 }
 
+.wrapper {
+    display: none;
+}
+
 .menu ul {
     display: flex;
     height: 95px;
@@ -1224,9 +1228,10 @@ textarea {
 
     .wrapper-opacity {
         position: absolute;
+        display: block;
         z-index: 90;
         width: 100vw;
-        height: 100vh;
+        height: 110vh;
         background: #2D303A;
         opacity: 0.6;
     }
@@ -1464,7 +1469,7 @@ textarea {
     }
 
     .form {
-        width: 375px;
+        width: 320px;
     }
 
     .form_wrapper {
